@@ -1,0 +1,63 @@
+body {
+  margin-top: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.weather {
+  border: 1px solid #e7e7e7;
+  padding: 20px 20px 20px 20px;
+  max-width: 800px;
+}
+
+.top {
+  margin-bottom: 20px;
+}
+
+.city:hover {
+  color: blue;
+}
+
+.button1 {
+  padding: 5px 23px;
+  color: rgb(14, 13, 13);
+  background: #ebedf9;
+  border: 2px solid #4284e2;
+  transition: all 150ms ease-in-out;
+}
+
+button:hover {
+  background: #b0b2bd;
+  color: rgb(14, 13, 13);
+  border: 2px solid #b0b2bd;
+}
+
+.button2 {
+  padding: 5px 23px;
+  color: black;
+  background: #e4f6f5;
+  border: 2px solid #51b8f3;
+  transition: all 150ms ease-in-out;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.Current {
+  margin-top: 15px;
+}
+
+.Days {
+  text-align: center;
+  line-height: 28px;
+  margin-top: 40px;
+}
+.weatherCol {
+  font-size: 20px;
+}
+
+.units {
+  position: relative;
+  top: -17px;
+  font-size: 16px;
+}
