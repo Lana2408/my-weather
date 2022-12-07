@@ -1,1 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+		<title>My Weather</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+  
+    <div class="container">
+      <div class="weather">
+      <div class="top">
+      <div class="row">
+        <div class="col-2"><span class="city">New York</span></div>
+        <div class="col-2"><span class="city">London</span></div>
+        <div class="col-2"><span class="city">Tokio</span></div>
+        <div class="col-2"><span class="city">Kyiv</span></div>
+      </div>
+      </div>
+      
+    
+
+    
+      <form id = "enter-city">
+        <div class="row">
+          <div class="col-7">
+            <input
+              type="search"
+              class="form-control"
+              autofocus="on"
+              autocomplete="off"
+              id = "enter-yourcity"
+              placeholder="Enter a city"
+            />
+          </div>
+            <div class="col-4">
+              <button type = "submit" class = "button1">Search</button>
+
+              <button class="button2" id="current-position">Current</button>
+            </div>
+          </div>
+        
+      </form>
+    
+    <div class="Current">
+      <p class = todayDate>
+      04.11 Today 14:14
+      </p>
+    </div>
+    <div class="row">
+    <div class="col-6">
+        <h1>
+        <span class="mycity" id = "my-city">Kyiv</span> <span class = "temp" id = "temp">13</span><span class="units">
+                  <a href="#" id="celsius-link">°C</a> |
+                  <a href="#" id="fahrenheit-link">°F</a>
+                </span>
+                
+        </h1>
+    </div>
+    <div class="col-2">
+<img src="src/cloud.png" alt="" width="70">
+    </div>
+    <div class="col-2">
+        <p>
+        Humidity <span class="humidity" id="humidity">45</span>%</br>
+        Wind <span class="wind" id="wind">15</span> km/h
+        </p>
+    </div>
+    <div class="Days">
+    <div class="row">
+      <div class="col-2">
+        <p>
+          05.11 </br>
+         <span class="weatherCol">Saturday</span>  </br>
+          <img src="src/cloudy.png" alt="" width="50" ></br>
+          <span class="weatherCol">12 / 9</span></br>
+           <small>56% </br>
+            34 km/h</small>
+        </p>
+      </div>
+      
+       <div class="col-2">
+          06.11 </br> <span class="weatherCol">Sunday</span> </br><img src="src/rainy.png" alt="" width="50"> </br> <span class="weatherCol">14 / 9</span> </br> <small>45%</br>45 km/h</small>
+        </p>
+      </div>
+
+       <div class="col-2">
+        <p>
+          07.11 </br> <span class="weatherCol">Monday</span> </br><img src="src/sun.png" alt="" width="50"></br><span class="weatherCol">13 / 7</span> </br> <small> 67% </br> 23 km/h</small>
+        </p>
+      </div>
+
+       <div class="col-2">
+        <p>
+          08.11 </br> <span class="weatherCol">Tuesday</span>  </br><img src="src/rain.png" alt="" width="50"></br> <span class="weatherCol">10 / 6</span></br> <small>55% </br> 13 km/h</small>
+        </p>
+      </div>
+
+       <div class="col-2">
+        <p>
+          09.11 </br> <span class="weatherCol">Wednesday</span>  </br><img src="src/cloudy (2).png" alt="" width="50"></br> <span class="weatherCol">11 / 7</span> </br> <small>65% </br> 27 km/h</small>
+        </p>
+      </div> 
+      </div>                                                                                                                                                                                                                                                                                       
+      </div>
+    </div>
+    </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
 
